@@ -1,6 +1,7 @@
 import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 import { Badge } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -44,15 +45,15 @@ const Logo = styled.h1`
 `;
 const Right = styled.div`
   flex: 1;
-  display:flex;
-  align-items:center;
-  justify-content:flex-end;  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `;
 
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
-  margin-left:25px;
+  margin-left: 25px;
 `;
 
 const Navbar = () => {
@@ -69,10 +70,24 @@ const Navbar = () => {
           <Logo>Geo </Logo>
         </Center>
         <Right>
-          <MenuItem>Register</MenuItem>
-          <MenuItem>Sign In</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="primary">
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/register"
+            >
+              Register
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/login"
+            >
+              Sign In
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Badge color="primary">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>

@@ -73,4 +73,12 @@ export const popularProducts = [
     id: 8,
     img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
   },
+  {
+    id: 9,
+    img: "https://m.media-amazon.com/images/I/61uOK5owU0L._AC_UF1000,1000_QL80_.jpg",
+  },
+  {
+    id: 10,
+    img: "https://assets.ajio.com/medias/sys_master/root/20220607/ZblV/629e71bff997dd03e2682a4d/-473Wx593H-469205517-tan-MODEL.jpg",
+  },
 ];
